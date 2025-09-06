@@ -1,0 +1,23 @@
+spring:
+  rabbitmq:
+    host: rabbit
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          max-attempts: 3
+          enabled: true
+rabbitmq:
+  queue:
+    pendingproposal: proposta-pendente.ms-analise-credito
+  completedproposal:
+    exchange: proposta-concluida.ex
+
+
+
+
+
+
+

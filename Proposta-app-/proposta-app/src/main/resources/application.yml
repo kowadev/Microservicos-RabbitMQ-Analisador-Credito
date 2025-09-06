@@ -1,0 +1,37 @@
+spring:
+  profiles:
+    active: ${APP_PROFILE:test}
+
+rabbitmq:
+  queue:
+    proposalcompleted: proposta-concluida.ms-analise-credito
+  pendingproposal:
+    exchange: proposta-pedente.ex
+  proposalcompleted:
+    exchange: proposta-concluida.ex
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: "test"
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  rabbitmq:
+    host: ${HOST_RABBIT:rabbit}
+    port: ${PORT_RABBIT:5672}
+    username: ${USERNAME_RABBIT:guest}
+    password: ${PASSWORD_RABBIT:guest}
+
+  jpa:
+    hibernate:
+      show-sql: true
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
