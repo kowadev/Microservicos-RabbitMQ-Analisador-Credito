@@ -8,7 +8,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
   <img src="https://img.shields.io/badge/Java-21-blue?style=for-the-badge&logo=openjdk&logoColor=white"/>
   <img src="https://img.shields.io/badge/Spring_Boot-3.5.4-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
   <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shielgit sds.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
 
@@ -27,6 +27,8 @@ Este projeto foi desenvolvido para treinar **arquitetura de microsserviços** co
 ![Processando a proposta](images/imagefluxo3.png)
 4. As propostas vão para a fila de propostas completas, onde resultado é consumido pelo **Serviço de Propostas** e persistido no **banco de dados**.
 ![Devolvendo a proposta](images/imagefluxo4.png)
+5. Depois as propostas estão disponíveis para visualização contendo o resultado aprovado/reprovado com justificação.
+![Visualizando as propostas](images/imagefluxo5.png)
 ---
 
 ## 🔄 Arquitetura do Sistema
@@ -114,6 +116,10 @@ docker compose up -d --build
 - [Serviço de Propostas](https://github.com/gustavokowallski/Proposta-app-)  
 - [Serviço de Análise de Crédito](https://github.com/gustavokowallski/Analise-credito-app)  
 
+```bash
+Esse repositório tem poucos commits pois os serviços foram feitos em repositórios separados, nesse aqui eu apenas juntei os dois para facilidade no teste da API.
+
+```
 ---
 
 🔥 Esse projeto marcou meu primeiro contato real com **microsserviços**.  
