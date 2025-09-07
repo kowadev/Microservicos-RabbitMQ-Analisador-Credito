@@ -1,8 +1,5 @@
 # CreditCheck- Microsserviços com RabbitMQ
 
-## 📜 Licença
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-21-blue?style=for-the-badge&logo=openjdk&logoColor=white"/>
@@ -124,3 +121,7 @@ Esse repositório tem poucos commits pois os serviços foram feitos em repositó
 
 🔥 Esse projeto marcou meu primeiro contato real com **microsserviços**.  
 O próximo passo será construir uma solução **100% do zero, mais robusta e escalável**.
+
+## 📜 Licença
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
